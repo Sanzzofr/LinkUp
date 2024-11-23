@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="joinRoom" class="container">
+    <h2>Join Chat Room</h2>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <button id="joinButton">Join</button>
+  </div>
+
+  <div id="chatRoom" class="container hidden">
+    <div class="chat-header">
+      <h2>Chat Room</h2>
+      <span id="currentUser"></span>
+    </div>
+    <div id="messages" class="messages"></div>
+    <div class="chat-input">
+      <input type="text" id="messageInput" placeholder="Type your message..." />
+      <button id="sendButton">Send</button>
+    </div>
+  </div>
+
+  <script src="https://js.pusher.com/7.2/pusher.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
