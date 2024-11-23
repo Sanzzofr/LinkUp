@@ -55,7 +55,7 @@ sendButton.addEventListener("click", () => {
     messageInput.value = "";
 
     // You'd need a secure backend endpoint for broadcasting
-    fetch("https://your-backend-url/send", {
+    fetch("https://link-up-pi-virid.vercel.app/api/send.js", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
